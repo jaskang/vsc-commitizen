@@ -2,7 +2,7 @@
     "name": "vsc-commitizen",
     "displayName": "vsc-commitizen",
     "description": "vscode commitizen support",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "publisher": "jaskang",
     "engines": {
         "vscode": "^1.30.0"
@@ -17,24 +17,24 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/JasKang/vsc-commitizen.git"
-      },
-      "author": {
+    },
+    "author": {
         "name": "jaskang",
         "email": "jaskang@qq.com"
-      },
-      "license": "MIT",
-      "bugs": {
+    },
+    "license": "MIT",
+    "bugs": {
         "url": "https://github.com/JasKang/vsc-commitizen/issues"
-      },
-      "homepage": "https://github.com/JasKang/vsc-commitizen",
+    },
+    "homepage": "https://github.com/JasKang/vsc-commitizen",
     "contributes": {
         "commands": [
             {
-              "command": "vsc-commitizen.commit",
-              "title": "conventional commit",
-              "category": "Commitizen"
+                "command": "vsc-commitizen.commit",
+                "title": "conventional commit",
+                "category": "Commitizen"
             }
-          ]
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
