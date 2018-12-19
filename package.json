@@ -14,13 +14,27 @@
         "onCommand:extension.sayHello"
     ],
     "main": "./out/extension",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JasKang/vsc-commitizen.git"
+      },
+      "author": {
+        "name": "jaskang",
+        "email": "jaskang@qq.com"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "https://github.com/JasKang/vsc-commitizen/issues"
+      },
+      "homepage": "https://github.com/JasKang/vsc-commitizen",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+              "command": "vsc-commitizen.commit",
+              "title": "conventional commit",
+              "category": "Commitizen"
             }
-        ]
+          ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
