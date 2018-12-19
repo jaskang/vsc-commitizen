@@ -3,6 +3,7 @@
     "displayName": "vsc-commitizen",
     "description": "vscode commitizen support",
     "version": "0.1.0",
+    "publisher": "jaskang",
     "engines": {
         "vscode": "^1.30.0"
     },
