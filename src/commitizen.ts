@@ -117,24 +117,24 @@ export class Commitizen {
       description: scope.description || ''
     }));
     scopePicks.unshift({
-      label: '无scope',
+      label: '无',
       description: '本次提交无需scope'
     });
     scopePicks.push({
-      label: '自定义scope',
+      label: '自定义',
       description: '自己填写scope'
     });
     await askOneOf(
       'scope用于说明本次Commit所影响的范围',
       scopePicks,
       pick => {
-        if (pick.label === '无scope') {
+        if (pick.label === '无') {
           this.scope = '';
         } else {
           this.scope = pick.label;
         }
       },
-      '自定义scope',
+      '自定义',
       '输入一个新的scope'
     );
   }
