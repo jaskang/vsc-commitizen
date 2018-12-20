@@ -1,5 +1,7 @@
 # vsc-commitizen README
 
+vscode marketplace [https://marketplace.visualstudio.com/items?itemName=jaskang.vsc-commitizen](https://marketplace.visualstudio.com/items?itemName=jaskang.vsc-commitizen)
+
 ## 这是一个用来格式化 Commit message 的插件
 
 > 用以提供符合 [commitizen](https://github.com/commitizen/cz-cli) 的 Commit message
