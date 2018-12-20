@@ -8,12 +8,12 @@ let output: vscode.OutputChannel;
 
 function hasOutput(result?: {stdout?: string}): boolean {
     return Boolean(result && result.stdout);
-  }
+}
   
 async function hasStagedFiles(cwd: string): Promise<boolean> {
     const result = await execa('git', ['diff', '--name-only', '--cached'], {cwd});
     return hasOutput(result);
-  }
+}
   
 async function conditionallyStageFiles(cwd: string): Promise<void> {
     const hasSmartCommitEnabled = vscode.workspace.getConfiguration('git')
@@ -22,7 +22,7 @@ async function conditionallyStageFiles(cwd: string): Promise<void> {
     if (hasSmartCommitEnabled && !(await hasStagedFiles(cwd))) {
         output.appendLine('Staging all files (enableSmartCommit enabled with nothing staged)');
       await vscode.commands.executeCommand('git.stageAll');
-    }
+    } 
   }
 async function commit(cwd: string, message: string): Promise<void> {
     output.appendLine(`About to commit '${message}'`);
