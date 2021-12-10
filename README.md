@@ -16,8 +16,8 @@ vscode marketplace [https://marketplace.visualstudio.com/items?itemName=jaskang.
 
 ![subject](assets/subject.png 'subject')
 
-> 支持预设 scope  
-> 在项目根目录添加 .vsc-commitizen.json
+- 支持预设 scope  
+- 在.vscode目录添加 .vsc-commitizen.json配置文件
 
 ```json
 {
@@ -54,7 +54,6 @@ vscode marketplace [https://marketplace.visualstudio.com/items?itemName=jaskang.
 
 不管是哪一个部分，任何一行都不得超过 72 个字符（或 100 个字符）。这是为了避免自动换行影响美观。
 
-2.1 Header
 Header 部分只有一行，包括三个字段：type（必需）、scope（可选）和 subject（必需）。
 
 #### type
@@ -82,5 +81,13 @@ subject 是 commit 目的的简短描述，不超过 50 个字符。
 以动词开头，使用第一人称现在时，比如 change，而不是 changed 或 changes
 第一个字母小写
 结尾不加句号（.）
+
+#### body
+
+body 是 commit 目的的详细描述, 原则上每行不超过 72 个字符。
+
+#### footer
+
+footer 是 commit 的备注信息。
 
 转自[阮一峰 Commit message 和 Change log 编写指南](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)

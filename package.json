@@ -34,7 +34,30 @@
         "title": "commit",
         "category": "vsc-commitizen"
       }
-    ]
+    ],
+    "keybindings": [
+      {
+        "command": "vsc-commitizen.commit",
+        "key": "ctrl+alt+q",
+        "when": ""
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "vsc-commitizen",
+      "properties": {
+        "vsc-commitizen.enableVerbose": {
+          "type": "boolean",
+          "default": true,
+          "description": "打开详细的提交，即包括body和footer"
+        },
+        "vsc-commitizen.scopeFile": {
+          "type": "string",
+          "default": ".vscode/.vsc-commitizen.json",
+          "description": "预设scope配置文件的路径设置,默认为.vscode目录下的.vsc-commitizen.json文件"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
@@ -51,7 +74,7 @@
     "tslint": "^5.8.0",
     "tslint-config-prettier": "^1.17.0",
     "typescript": "^3.1.4",
-    "vscode": "^1.1.25"
+    "vscode": "^1.1.37"
   },
   "dependencies": {
     "execa": "^1.0.0",
